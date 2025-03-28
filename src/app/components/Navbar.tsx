@@ -6,9 +6,6 @@ import { Menu, X } from "lucide-react"; // Icons for menu
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const handleRefresh = () => {
-    window.location.href = "/"; // Forces full page reload
-  };
 
   return (
     <nav className="bg-gray-900 text-white shadow-md">
@@ -53,18 +50,20 @@ const Navbar: React.FC = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-800 text-center py-4">
-          <button
+          <Link
             key="Home"
-            onClick={handleRefresh}
+            href={`/`}
+            onClick={() => setIsOpen(false)}
             className="block py-2 hover:text-yellow-400 w-full"
           >
             Home
-          </button>
+          </Link>
           {["About", "Events", "Resources", "Gallery", "Contact"].map(
             (item) => (
               <Link
                 key={item}
                 href={`/${item.toLowerCase()}`}
+                onClick={() => setIsOpen(false)}
                 className="block py-2 hover:text-yellow-400"
               >
                 {item}
