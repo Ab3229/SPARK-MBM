@@ -15,7 +15,7 @@ const EventsPage = async () => {
       title: "Contest 2.0",
       date: "April 08, 2025 (Tentative)",
       description: `Gear up for "Contest 2.0," our upcoming coding competition designed to challenge and refine your programming skills. Engage with a series of thought-provoking problems that will test your algorithmic prowess and problem-solving abilities. Stay tuned for more details as we approach the event date. `,
-      link: "https://updatesoon.com",
+      link: "/register",
     },
     // Add more upcoming events as needed
   ];
