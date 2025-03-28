@@ -17,14 +17,14 @@ const JoinNowPage: React.FC = () => {
 
         {/* Buttons with Icons */}
         <div className="mt-8 space-y-5">
-          <a
+          {/* <a
             href="https://docs.google.com/forms/d/1bokHBD-HPz_AxMsmLf1j37qudy1f9sBFigo2NBFxZwY"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center py-3 px-4 rounded-lg text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
           >
             <FileText className="mr-2 h-5 w-5" /> Google Form
-          </a>
+          </a> */}
           <a
             href="https://chat.whatsapp.com/BqAr6ziE7Vl0Aa1cwUwsk4"
             target="_blank"
@@ -33,14 +33,14 @@ const JoinNowPage: React.FC = () => {
           >
             <FaWhatsapp className="mr-2 h-5 w-5" /> WhatsApp Community
           </a>
-          {/* <a
-            href="YOUR_TELEGRAM_CHANNEL_LINK"
+          <a
+            href="https://t.me/spark_mbm"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center py-3 px-4 rounded-lg text-sm font-semibold text-white bg-blue-400 hover:bg-blue-500 transition-all duration-300 shadow-md hover:shadow-lg"
           >
             <FaTelegramPlane className="mr-2 h-5 w-5" /> Telegram Channel
-          </a> */}
+          </a>
           <a
             href="https://www.linkedin.com/company/spark-mbm/"
             target="_blank"
