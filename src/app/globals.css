@@ -3,3 +3,16 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+input, select {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus, select:focus {
+    transform: scale(1.02);
+  }
+  
+  button {
+    transition: all 0.3s ease-in-out;
+  }
+  

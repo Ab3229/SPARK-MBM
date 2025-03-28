@@ -134,7 +134,7 @@ const ContactPage: React.FC = () => {
           <div>
             <button
               type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 cursor-pointer mt-5"
+              className="w-full py-3 text-lg font-semibold text-gray-900 bg-yellow-500 rounded-lg hover:bg-yellow-400 transition-all duration-300 shadow-md transform hover:scale-105 cursor-pointer mt-5 "
             >
               Send Message
             </button>
