@@ -54,15 +54,15 @@ npm install
 1. Open **[Google Sheets](https://docs.google.com/spreadsheets/u/0/)** and create a **new sheet**.
 2. Rename the first row as headers:
 
-```
-Full Name | Branch | Contact | Email | Difficulty | Timestamp
-```
+   ```
+   Full Name | Branch | Contact | Email | Difficulty | Timestamp
+   ```
 
 3. Copy your **Google Sheet ID** from the URL:
 
-```
-https://docs.google.com/spreadsheets/d/GOOGLE_SHEET_ID/edit
-```
+   ```
+   https://docs.google.com/spreadsheets/d/GOOGLE_SHEET_ID/edit
+   ```
 
 - **Your `GOOGLE_SHEET_ID` is the part after `/d/` and before `/edit`**.
 
@@ -73,26 +73,28 @@ https://docs.google.com/spreadsheets/d/GOOGLE_SHEET_ID/edit
 1. In **Google Sheets**, click **Extensions → Apps Script**.
 2. Delete any existing code and **paste the script below**:
 
-```javascript
-function doPost(e) {
-  var sheet = SpreadsheetApp.openById("YOUR_GOOGLE_SHEET_ID").getActiveSheet();
+   ```javascript
+   function doPost(e) {
+     var sheet = SpreadsheetApp.openById(
+       "YOUR_GOOGLE_SHEET_ID"
+     ).getActiveSheet();
 
-  var data = JSON.parse(e.postData.contents);
+     var data = JSON.parse(e.postData.contents);
 
-  sheet.appendRow([
-    data.fullName,
-    data.branch,
-    data.contact,
-    data.email,
-    data.difficulty,
-    new Date().toLocaleString(), // Timestamp
-  ]);
+     sheet.appendRow([
+       data.fullName,
+       data.branch,
+       data.contact,
+       data.email,
+       data.difficulty,
+       new Date().toLocaleString(), // Timestamp
+     ]);
 
-  return ContentService.createTextOutput(
-    JSON.stringify({ status: "Success" })
-  ).setMimeType(ContentService.MimeType.JSON);
-}
-```
+     return ContentService.createTextOutput(
+       JSON.stringify({ status: "Success" })
+     ).setMimeType(ContentService.MimeType.JSON);
+   }
+   ```
 
 3. Replace `"YOUR_GOOGLE_SHEET_ID"` with your actual Google Sheet ID.
 4. Click **Deploy → New Deployment**, then follow these steps:
@@ -131,27 +133,29 @@ We **welcome contributions!** If you'd like to improve the project, follow these
 
 1. **Fork the repository** by clicking the "Fork" button at the top right of this page.
 2. **Clone your forked repo** to your local machine:
+
    ```bash
    git clone https://github.com/your-username/SPARK-MBM.git
    cd SPARK-MBM
    ```
+
 3. Create a feature branch:
 
-```bash
-git checkout -b feature-name
-```
+   ```bash
+   git checkout -b feature-name
+   ```
 
 4. Make your changes and commit them:
 
-```bash
-git commit -m "Added new feature"
-```
+   ```bash
+   git commit -m "Added new feature"
+   ```
 
 5. Push your branch to GitHub:
 
-```bash
-git push origin feature-name
-```
+   ```bash
+   git push origin feature-name
+   ```
 
 6. Create a Pull Request (PR):
 
@@ -166,4 +170,6 @@ git push origin feature-name
 
 This project is open-source under the MIT License.
 
-##
+## **📝 Author**
+
+[Pradyumn Chaudhary](https://github.com/Pradyumn-Chaudhary)
