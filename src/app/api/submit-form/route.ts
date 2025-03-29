@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     
     // Google Apps Script URL (Replace this with your own)
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbweKwp3S7iGlhstgELerdgVesLpx_OZ-6NicAenApwea_bIrV-Oc9Wtf7rSePBR7bQ6-w/exec";
+    const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL!;
 
     const response = await fetch(GOOGLE_SCRIPT_URL, {
       method: "POST",
