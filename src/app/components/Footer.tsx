@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 const Footer: React.FC = () => {
   return (
     <footer className="py-6 text-center bg-gray-900 text-gray-400">
-      <p className="flex justify-center items-center gap-2">
+      <p className="flex flex-col sm:flex-row justify-center items-center gap-2">
         © 2025 SPARK | All Rights Reserved |  💻 Contribute on 
         <a
           href="https://github.com/Pradyumn-Chaudhary/SPARK-MBM"
