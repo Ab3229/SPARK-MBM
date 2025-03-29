@@ -3,9 +3,8 @@ import { FaGithub } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-6 text-center bg-gray-900 text-gray-400">
-      <p className="flex flex-col sm:flex-row justify-center items-center gap-2">
-        © 2025 SPARK | All Rights Reserved |  💻 Contribute on 
+    <footer className="py-6 text-center bg-gray-900 text-gray-400 flex justify-center items-center gap-2">
+        © 2025 SPARK | All Rights Reserved |  <span className="hidden sm:inline">💻 Contribute on </span>
         <a
           href="https://github.com/Pradyumn-Chaudhary/SPARK-MBM"
           target="_blank"
@@ -14,7 +13,6 @@ const Footer: React.FC = () => {
         >
           GitHub <FaGithub className="text-lg" />
         </a>
-      </p>
     </footer>
   );
 };
