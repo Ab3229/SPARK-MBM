@@ -24,7 +24,7 @@ const About = () => {
     // Add more team members as needed
   ];
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-gray-900 text-white min-h-screen">
       {/* Hero Section */}
       <section className="h-80 flex flex-col justify-center items-center text-center px-6 bg-gray-800">
         <h1 className="text-4xl font-bold">About SPARK 🚀</h1>
