@@ -2,27 +2,7 @@ import Image from "next/image";
 import { FaXTwitter } from "react-icons/fa6";
 import { Linkedin, Github, Mail } from "lucide-react";
 const About = () => {
-  const teamMembers = [
-    {
-      name: "Pradyumn Chaudhary",
-      role: "Founder & Lead",
-      image: "/Pradyumn.jpg",
-      linkedin: "https://www.linkedin.com/in/pradyumnchaudhary",
-      twitter: "https://twitter.com/PradyumnSantruk",
-      github: "https://github.com/Pradyumn-Chaudhary",
-      mail: "mailto:pradyumnchaudhary6@gmail.com",
-    },
-    {
-      name: "Mayank Aggarwal",
-      role: "Founder & Lead",
-      image: "/Mayank.png",
-      linkedin: "https://www.linkedin.com/in/er-mayank-aggarwal/",
-      twitter: "https://twitter.com/PradyumnSantruk",
-      github: "https://github.com/Er-Mayank-Aggarwal",
-      mail: "mailto:mayank1gdsc@gmail.com",
-    },
-    // Add more team members as needed
-  ];
+  
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       {/* Hero Section */}
