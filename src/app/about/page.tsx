@@ -24,56 +24,7 @@ const About = () => {
         </p>
       </section>
 
-      {/* Meet the Team */}
-      <section className="py-16 px-6 bg-gray-800 text-center">
-        <h2 className="text-3xl font-bold">Meet Our Team</h2>
-        <p className="mt-4 text-gray-300">The passionate minds behind SPARK.</p>
-        <div className="mt-6 flex flex-wrap justify-center gap-6">
-          {teamMembers.map((member) => (
-            <div key={member.name} className="bg-gray-700 p-6 rounded-lg w-64">
-              {/* Square container for the image */}
-              <div className="relative w-[150px] h-[150px] mx-auto">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="rounded-full object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mt-4 text-center">
-                {member.name}
-              </h3>
-              <p className="text-gray-400 text-center">{member.role}</p>
-              <div className="flex justify-center mt-4 space-x-4">
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="h-6 w-6 transition-all duration-300 hover:fill-[#0077b5] hover:stroke-[#0077b5]" />
-                </a>
-                <a
-                  href={member.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaXTwitter className="h-6 w-6 transition-all duration-300 hover:fill-[#000000] hover:stroke-[#000000]" />
-                </a>
-                <a
-                  href={member.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="h-6 w-6 transition-all duration-300 hover:fill-[#181717] hover:stroke-[#181717]" />
-                </a>
-                <a href={member.mail} target="_blank" rel="noopener noreferrer">
-                  <Mail className="h-6 w-6 transition-all duration-300 hover:fill-[#EA4335] hover:stroke-[#EA4335]" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+
 
       {/* Achievements Section */}
       {/* <section className="py-16 px-6 text-center">
