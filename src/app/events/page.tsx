@@ -10,16 +10,40 @@ type Event = {
 
 const EventsPage = async () => {
   let events: Event[] = [
-    {
-      id: uuidv4(),
-      title: "Contest 2.0",
-      date: "April 08, 2025 (Tentative)",
-      description: `Gear up for "Contest 2.0," our upcoming coding competition designed to challenge and refine your programming skills. Engage with a series of thought-provoking problems that will test your algorithmic prowess and problem-solving abilities. Stay tuned for more details as we approach the event date. `,
-      link: "https://forms.gle/DaGTz5NFpBhq6czr7",
-    },
+    // {
+    //   id: uuidv4(),
+    //   title: "Contest 3.0",
+    //   date: "April 08, 2025 (Tentative)",
+    //   description: `Gear up for "Contest 2.0," our upcoming coding competition designed to challenge and refine your programming skills. Engage with a series of thought-provoking problems that will test your algorithmic prowess and problem-solving abilities. Stay tuned for more details as we approach the event date. `,
+    //   link: "/register",
+    // },
     // Add more upcoming events as needed
   ];
   let pastevents: Event[] = [
+    {
+      id: uuidv4(),
+      title: "Contest 2.0 Beginners",
+      date: "April 8, 2025",
+      description:
+        "Unleash Your Code, Challenge the Best.",
+      link: "https://www.hackerrank.com/sparkbeginner",
+    },
+    {
+      id: uuidv4(),
+      title: "Contest 2.0 Intermediate",
+      date: "April 8, 2025",
+      description:
+        "Crack the logic, Conquer the leaderboard.",
+      link: "https://www.hackerrank.com/sparkintermediate",
+    },
+    {
+      id: uuidv4(),
+      title: "Contest 2.0 Advanced",
+      date: "April 8, 2025",
+      description:
+        "Where Coders Rise to the challenge",
+      link: "https://www.hackerrank.com/sparkadvanced",
+    },
     {
       id: uuidv4(),
       title: "Contest 1.0 Beginners",
