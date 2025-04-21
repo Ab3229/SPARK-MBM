@@ -3,30 +3,41 @@ import React from "react";
 
 const resources = [
   {
+    title: "Company wise DSA Sheet",
+    description:
+      "A well-structured DSA sheet organized by companies, helping you prepare for interviews with real questions previously asked by top tech firms like Google, Amazon, and Microsoft.",
+    link: "https://docs.google.com/spreadsheets/d/1mvlc8EYc3OVVU3X7NKoC0iZJr_45BL_pVxiJec0r94c/edit?gid=0#gid=0",
+  },
+  {
+    title: "DSA Patternwise Questions List",
+    description:
+      "Master DSA by solving problems grouped by patterns such as sliding window, two pointers, binary search, and more — an effective way to recognize problem-solving techniques.",
+    link: "https://docs.google.com/spreadsheets/d/1GBC4Lhnqk5sz38K2C3IT4NeFAdBW2tl1I4dv_BxhIQQ/edit?gid=0#gid=0",
+  },
+  {
     title: "DSA Patterns Roadmap",
     description:
-      "Embark on a structured journey through Data Structures and Algorithms with this comprehensive, self-paced course. From foundational principles to advanced techniques, each module is designed to build your proficiency through hands-on coding challenges, ensuring a deep and practical understanding of DSA concepts.",
+      "An open-source GitHub roadmap that breaks down DSA learning into patterns, providing structured guidance and curated resources for beginners to advanced learners.",
     link: "https://github.com/KushalVijay/DSA-Patterns-Roadmap",
   },
   {
     title: "Patternwise DSA with Questions LeetCode",
     description:
-      "Dive into algorithm design and analysis with this in-depth course tailored for those seeking a rigorous academic approach. Organized by patterns, it offers a curated set of problems from LeetCode, enabling learners to recognize and apply common strategies across various challenges, thereby enhancing problem-solving skills.",
+      "An insightful LeetCode discussion post listing essential DSA patterns with curated problem links, ideal for strengthening your grasp of pattern-based problem solving.",
     link: "https://leetcode.com/discuss/post/5886397/dsa-patterns-you-need-to-know-by-anubhav-x7og/",
   },
   {
     title: "Companywise DSA Questions",
     description:
-      "Prepare for technical interviews with this extensive compilation of Data Structures and Algorithms questions categorized by companies. By focusing on problems previously posed by top tech firms, this resource aids in targeted practice, helping you align your problem-solving abilities with the expectations of potential employers.",
+      "Explore this GitHub repository for a comprehensive collection of company-specific DSA questions, perfect for targeted preparation before your next tech interview.",
     link: "https://github.com/nishant-Tiwari24/company-wise-dsa",
   },
   {
     title: "Practice Companywise DSA Questions",
     description:
-      "Enhance your coding proficiency with this platform offering a curated list of top interview questions, organized by company. Through consistent practice of these problems, you can develop the skills and confidence necessary to excel in technical interviews and secure positions at leading organizations.",
+      "WorkAtTech provides a clean interface to practice real-world interview questions, sorted by top tech companies — ideal for focused revision and timed practice.",
     link: "https://workat.tech/problem-solving/lists/top-interview-questions/practice",
   },
-  // Add more resources as needed
 ];
 
 const ResourcesPage: React.FC = () => {
