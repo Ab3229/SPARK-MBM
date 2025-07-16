@@ -3,6 +3,12 @@ import React from "react";
 
 const resources = [
   {
+  title: "Striver's A2Z DSA Sheet",
+  description:
+    "An all-in-one guided roadmap covering Data Structures and Algorithms from basic to advanced, curated by Striver (Take U Forward).",
+  link: "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
+},
+  {
     title: "Company wise DSA Sheet",
     description:
       "A well-structured DSA sheet organized by companies, helping you prepare for interviews with real questions previously asked by top tech firms like Google, Amazon, and Microsoft.",
