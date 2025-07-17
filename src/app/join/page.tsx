@@ -1,6 +1,7 @@
 import { FileText, Linkedin } from "lucide-react"; // Lucide icons
 import React from "react";
 import { FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa"; // React Icons for WhatsApp, Instagram, and Telegram
+import { MdEmail } from "react-icons/md";
 
 const JoinNowPage: React.FC = () => {
   return (
@@ -33,6 +34,15 @@ const JoinNowPage: React.FC = () => {
           >
             <FaWhatsapp className="mr-2 h-5 w-5" /> WhatsApp Community
           </a>
+          <a
+             href="mailto:sparkmbmu@gmail.com"
+             target="_blank"
+             rel="noopener noreferrer"
+            className="w-full flex items-center justify-center py-3 px-4 rounded-lg text-sm font-semibold text-white bg-yellow-500 hover:bg-yellow-600 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <MdEmail className="mr-2 h-5 w-5" /> Email Us
+          </a>
+
           <a
             href="https://t.me/spark_mbm"
             target="_blank"
