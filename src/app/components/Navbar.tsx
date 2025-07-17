@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="bg-gray-900 text-white shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-gray-900 text-white shadow-md">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold">
@@ -17,20 +17,18 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <Link key={"Home"} href={`/`} className="hover:text-yellow-400">
+          <Link key="Home" href="/" className="hover:text-yellow-400">
             Home
           </Link>
-          {["About", "Events", "Resources", "Gallery", "Contact"].map(
-            (item) => (
-              <Link
-                key={item}
-                href={`/${item.toLowerCase()}`}
-                className="hover:text-yellow-400"
-              >
-                {item}
-              </Link>
-            )
-          )}
+          {["About", "Events", "Resources", "Gallery", "Contact"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item.toLowerCase()}`}
+              className="hover:text-yellow-400"
+            >
+              {item}
+            </Link>
+          ))}
         </div>
 
         {/* Join Now Button */}
@@ -52,24 +50,22 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-gray-800 text-center py-4">
           <Link
             key="Home"
-            href={`/`}
+            href="/"
             onClick={() => setIsOpen(false)}
             className="block py-2 hover:text-yellow-400 w-full"
           >
             Home
           </Link>
-          {["About", "Events", "Resources", "Gallery", "Contact"].map(
-            (item) => (
-              <Link
-                key={item}
-                href={`/${item.toLowerCase()}`}
-                onClick={() => setIsOpen(false)}
-                className="block py-2 hover:text-yellow-400"
-              >
-                {item}
-              </Link>
-            )
-          )}
+          {["About", "Events", "Resources", "Gallery", "Contact"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item.toLowerCase()}`}
+              onClick={() => setIsOpen(false)}
+              className="block py-2 hover:text-yellow-400"
+            >
+              {item}
+            </Link>
+          ))}
           <Link
             href="/join"
             className="block py-2 mt-2 bg-yellow-500 text-gray-900 px-4 rounded-lg hover:bg-yellow-400"
